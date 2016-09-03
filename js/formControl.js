@@ -1,0 +1,29 @@
+// We'll use a little jquery to enable our navbar after login
+$(document).ready(function(){
+    $("#navButton1").click(function(){
+        $("#form1").show();
+        $("#form2").hide();
+        $("#form3").hide();
+    });
+    $("#navButton2").click(function(){
+        $("#form2").show();
+        $("#form1").hide();
+        $("#form3").hide();
+    });
+    $("#navButton3").click(function(){
+        $("#form3").show();
+        $("#form2").hide();
+        $("#form1").hide();
+    });
+});
+
+/*
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+*/

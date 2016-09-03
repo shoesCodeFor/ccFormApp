@@ -22,6 +22,9 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+        <script src="js/vendor/jquery-3.1.0.min.js"></script>
+        <script src="js/formControls.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -36,10 +39,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand navbar-left" href="#">CC Sand &amp; Stone</a>
         </div>
           
-        <div id="navbar" class="navbar-collapse collapse">    
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li id="navButton1"><a href="#">Form 1</a></li>
+            <li id="navButton2"><a href="#">Form 2</a></li>
+            <li id="navButton3"><a href="#">Form 3</a></li>  
+            
+          </ul>        
           <form class="navbar-form navbar-right" role="form">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
@@ -54,7 +63,82 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+   
+      <div class="container" id="form1">
+        
+        <form name="ccSand">
+        <div class="form-group">    
+        <label name="custName">Customer Name</label>  
+        <input name="custName" type="text" class="form-control" required></input>
+        <label name="custTel">Customer Phone#</label>  
+        <input name="custTel" type="tel" class="form-control" required></input>  
+        <label name="custAddress">Customer Address</label><br/>  
+        <textarea name="custAddress" cols="auto" style="width:75%;" rows="4"></textarea>
+        <div class="row">
+            <div class="col-md-4">
+                <label name="qty1">Qty</label>  
+                <input name="qty1" type="text" class="form-control" required></input> 
+                <label name="item1">Item No.</label>  
+                <input name="item1" type="text" class="form-control" required></input><br/>
+            </div>
+            <div class="col-md-4">
+                <label name="qty2">Qty</label>  
+                <input name="qty2" type="text" class="form-control" ></input>
+                <label name="item2">Item No.</label>  
+                <input name="item2" type="text" class="form-control" required></input><br/>
+            </div>
+            <div class="col-md-4">
+                <label name="qty3">Qty</label>  
+                <input name="qty3" type="text" class="form-control" ></input>
+                <label name="item3">Item No.</label>  
+                <input name="item3" type="text" class="form-control" required></input><br/>
+            </div> 
+        </div>  <!-- End of Row -->
+        <button type="submit" class="">Submit</button>
+        </form>
+        
+        </div> <!-- End of form -->
+      </div>  <!-- End of container -->
+  
+    
+    <div class="jumbotron" id="form2">
+      <div class="container">
+        
+        <form name="ccSand">
+        <div class="form-group">    
+        <label name="custName">Customer Name 2</label>  
+        <input name="custName" type="text" class="form-control" required></input>
+        <label name="custTel">Customer Phone#</label>  
+        <input name="custTel" type="tel" class="form-control" required></input>  
+        <label name="custAddress">Customer Address</label><br/>  
+        <textarea name="custAddress" cols="auto" style="width:75%;" rows="4"></textarea>
+        <div class="row">
+            <div class="col-md-4">
+                <label name="qty1">Qty</label>  
+                <input name="qty1" type="text" class="form-control" required></input> 
+                <label name="item1">Item No.</label>  
+                <input name="item1" type="text" class="form-control" required></input><br/>
+            </div>
+            <div class="col-md-4">
+                <label name="qty2">Qty</label>  
+                <input name="qty2" type="text" class="form-control" ></input>
+                <label name="item2">Item No.</label>  
+                <input name="item2" type="text" class="form-control" required></input><br/>
+            </div>
+            <div class="col-md-4">
+                <label name="qty3">Qty</label>  
+                <input name="qty3" type="text" class="form-control" ></input>
+                <label name="item3">Item No.</label>  
+                <input name="item3" type="text" class="form-control" required></input><br/>
+            </div> 
+        </div>  <!-- End of Row -->
+        <button type="submit" class="">Submit</button>
+        </form>
+        
+        </div> <!-- End of form -->
+      </div>  <!-- End of container -->
+    </div>  <!-- End of Jumbotron -->
+    <div class="jumbotron" id="form3">
       <div class="container">
         
         <form name="ccSand">
@@ -83,18 +167,14 @@
                 <input name="qty3" type="text" class="form-control" ></input>
                 <label name="item3">Item No.</label>  
                 <input name="item3" type="text" class="form-control" required></input><br/>
-                
-            </div>
-            
-          
-        </div>  
-          <button type="submit" class="">Submit</button>
+            </div> 
+        </div>  <!-- End of Row -->
+        <button type="submit" class="">Submit</button>
         </form>
         
-      </div>
-        </div>    
-    </div>
-
+        </div> <!-- End of form -->
+      </div>  <!-- End of container -->
+    </div>  <!-- End of Jumbotron -->
     <div class="container">
       <!-- Example row of columns -->
       
@@ -102,8 +182,7 @@
       <footer>
         <p>&copy; C&amp;C Sand 2016</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+    </div> <!-- /container -->       
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
